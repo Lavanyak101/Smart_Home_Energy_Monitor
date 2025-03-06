@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Energy Monitor Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🏡 Smart Home Energy Monitor Pro</h1>
+
+        <!-- Theme Toggle Button -->
+        <button class="theme-btn" onclick="toggleTheme()">🌞 Light Mode</button>
+
+        <!-- Energy Chart Section -->
+        <div class="chart-container">
+            <canvas id="energyChart"></canvas>
+        </div>
+
+        <!-- Budget Section -->
+        <div class="budget-section">
+            <h2>Total Energy Cost: <span id="totalCost">$0.00</span></h2>
+            <h3>Set Energy Budget:</h3>
+            <input type="number" id="budgetInput" placeholder="Enter budget">
+            <button onclick="setBudget()">Set Budget</button>
+            <p id="budgetAlert" class="alert"></p>
+        </div>
+
+        <!-- Energy Usage Cards -->
+        <div class="devices">
+            <div class="device"><p>🔌 Air Conditioner</p><p id="acUsage">0W</p></div>
+            <div class="device"><p>❄️ Refrigerator</p><p id="fridgeUsage">0W</p></div>
+            <div class="device"><p>📺 TV</p><p id="tvUsage">0W</p></div>
+            <div class="device"><p>💡 Lights</p><p id="lightsUsage">0W</p></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

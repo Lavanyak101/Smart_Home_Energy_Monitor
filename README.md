@@ -67,3 +67,7 @@ Fix: Used Flask-CORS to enable cross-origin requests.
 Issue: Theme reset after page refresh.
 Fix: Used localStorage to remember user preference.
 
+
+
+
+
